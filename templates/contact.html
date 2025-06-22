@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliud Mautia - Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../src/style.css" rel="stylesheet">
+    <link href="../src/script.js" rel="script">
+    
+    <style>
+        
+
+       
+
+       
+            
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
+            <!-- Desktop Nav Links -->
+            <div class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <!-- About Me and Professional Overview are now direct links -->
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
+                <a href="educational-background.html" class="nav-link">Educational Background</a>
+                <a href="references.html" class="nav-link">References</a>
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </div>
+            <!-- Mobile menu toggle button -->
+            <div class="mobile-menu-toggle-container">
+                <button id="mobile-menu-button" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu (hidden by default, shown by JS) -->
+        <div id="mobile-menu" class="mobile-nav-menu">
+            <div class="nav-item-space">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="professional-overview.html">Professional Overview</a>
+                <a href="educational-background.html">Educational Background</a>
+                <a href="references.html">References</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dynamic Section Hero for Contact Me Page -->
+    <section id="dynamic-section-hero" class="section-hero container"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <h2>Contact Eliud</h2>
+    </section>
+
+    <main class="container">
+        <!-- Contact Me Section Content -->
+        <section id="contact" class="section-card">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact-info-grid">
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>mautiaeliud@email.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+254 720 059 892 / +86 130 3830 3477</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>401122, Chongqing China</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+254 720 059 892</span>
+                </div>
+            </div>
+
+            <p>Feel free to send me a direct message via WhatsApp:</p>
+            <form id="whatsappForm">
+                <div class="contact-form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-buttons-container">
+                    <button type="submit" class="form-submit-button">
+                        <i class="fab fa-whatsapp"></i> Send WhatsApp Message
+                    </button>
+                    <span id="form-message" class="hidden"></span>
+                </div>
+            </form>
+
+            <h3 class="subsection-title">Connect with me on Social Media</h3>
+            <div class="social-media-buttons">
+                <a href="https://www.linkedin.com/in/eliud-mautia-5245274b?lipi=urn%3Ali" target="_blank" class="social-button linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="" target="_blank" class="social-button twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="" target="_blank" class="social-button facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="" target="_blank" class="social-button instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </section>
+    </main>
+    
+
+   
+    <script src="../src/script.js"></script>
+   
+</body>
+</html>

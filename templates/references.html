@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliud Mautia - References</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link href="../src/style.css" rel="stylesheet">
+    <link href="../src/script.js" rel="script">
+   
+    <style>
+       
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
+            <!-- Desktop Nav Links -->
+            <div class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <!-- About Me and Professional Overview are now direct links -->
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
+                <a href="educational-background.html" class="nav-link">Educational Background</a>
+                <a href="references.html" class="nav-link">References</a>
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </div>
+            <!-- Mobile menu toggle button -->
+            <div class="mobile-menu-toggle-container">
+                <button id="mobile-menu-button" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu (hidden by default, shown by JS) -->
+        <div id="mobile-menu" class="mobile-nav-menu">
+            <div class="nav-item-space">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="professional-overview.html">Professional Overview</a>
+                <a href="educational-background.html">Educational Background</a>
+                <a href="references.html">References</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dynamic Section Hero for References Page -->
+    <section id="dynamic-section-hero" class="section-hero container"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <h2>Professional References</h2>
+    </section>
+
+    <main class="container">
+        <!-- References Section Content -->
+        <section id="references" class="section-card">
+            <h2 class="section-title">Professional References</h2>
+            <p>
+                Professional references are available upon request. Please feel free to reach out to me via the <a href="contact.html" style="color: #A37B5C; text-decoration: underline;">Contact Me</a> page to request specific references, tailored to your needs. Below are examples of the type of information I can provide.
+            </p>
+
+            <div class="references-grid">
+                <div class="reference-item">
+                    <h3>Mr. Garry James</h3>
+                    <p>Head of Secondary, YEW Chung International school Chongqing </p>
+                    <p>Email: <span class="break-words">jane.doe@example.com</span></p>
+                    <p>Phone: +1 123 456 7890</p>
+                </div>
+                <div class="reference-item">
+                    <h3>Mr. John Smith</h3>
+                    <p>Head of Academics, Kitengela International School</p>
+                    <p>Email: <a href="mailto:john.smith@example.com" class="text-blue-600 hover:underline break-words">john.smith@example.com</a></p>
+                    <p>Phone: <a href="tel:+19876543210" class="text-blue-600 hover:underline">+1 987 654 3210</a></p>
+                </div>
+                <div class="reference-item">
+                    <h3>Ms. Alice Brown</h3>
+                    <p>Former Head of Mathematics, Kianda School</p>
+                    <p>Email: <a href="mailto:robertgreen@example.com" class="text-blue-600 hover:underline break-words">robert.green@example.com</a></p>
+                    <p>Phone: +1 222 333 4444</p>
+                </div>
+                <div class="reference-item">
+                    <h3>Prof. Robert Green</h3>
+                    <p>University Lecturer, Kenyatta University</p>
+                    <p>Email: <a href="mailto:robert.green@example.com" class="text-blue-600 hover:underline break-words">robert.green@example.com</a></p>
+                    <p>Phone: <a href="tel:+15556667777" class="text-blue-600 hover:underline">+1 555 666 7777</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- Footer -->
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+    
+
+</body>
+</html>

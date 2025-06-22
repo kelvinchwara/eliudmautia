@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliud Mautia - About Me</title>
+    <meta name="description" content="Learn more about Eliud Mautia, a highly motivated and innovative Mathematics educator with experience across IGCSE, A Level, IB Diploma, and 8.4.4. systems.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../src/style.css" rel="stylesheet">
+    <style>
+        /* Add some basic styling for the new elements.
+           Ideally, these would be in your external style.css file. */
+        .about-content-wrapper {
+            display: flex;
+            flex-direction: column; /* Stacks items on small screens */
+            gap: 2rem;
+            align-items: center; /* Center items vertically in column, horizontally in row */
+        }
+
+        .about-image {
+            flex-shrink: 0; /* Prevent image from shrinking */
+            max-width: 350px; /* Adjust size as needed */
+            height: 230px; /* Maintain aspect ratio */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text-content {
+            flex-grow: 1; /* Allows text to take available space */
+            text-align: center; /* Center text for smaller screens */
+        }
+
+        .skills-section {
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .skill-item {
+            background-color: #f0f0f0; /* Light background for skill tags */
+            padding: 0.75rem 1.25rem;
+            border-radius: 25px;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #007bff; /* Example primary color */
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .about-content-wrapper {
+                flex-direction: row; /* Rows on larger screens */
+                text-align: left; /* Align text to left on larger screens */
+            }
+            .about-image {
+                margin-right: 2rem; /* Space between image and text */
+            }
+            .about-text-content {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
+            <div class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
+                <a href="educational-background.html" class="nav-link">Educational Background</a>
+                <a href="references.html" class="nav-link">References</a>
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </div>
+            <div class="mobile-menu-toggle-container">
+                <button id="mobile-menu-button" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-nav-menu">
+            <div class="nav-item-space">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="professional-overview.html">Professional Overview</a>
+                <a href="educational-background.html">Educational Background</a>
+                <a href="references.html">References</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="dynamic-section-hero" class="section-hero container"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549923746-c50f80722e03?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <h2>About Eliud Mautia</h2>
+    </section>
+
+    <main class="container">
+        ---
+        <section id="about" class="section-card">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content-wrapper">
+                <img src="C:\Users\sagin\Desktop\eliud mautia\media\img\WhatsApp Image 2025-06-15 at 5.36.24 PM.jpeg" alt="Eliud Mautia's Professional Headshot" class="about-image">
+                <div class="about-text-content">
+                    <p>
+                        I am a highly motivated and innovative professional with a flexible mindset, adept at embracing new ideas and changes, and driven by a commitment to achieving results through teamwork. I excel in leadership, organization, and interpersonal communication, bringing extensive experience in Secondary Mathematics education across IGCSE, A Level, IB Diploma, and 8.4.4. systems. As a passionate educator, I employ an effective and positive teaching style, leveraging technology to cultivate independent learners.
+                    </p>
+                    <p>
+                        My advanced skills in communication, planning, socialization, and problem-solving empower me to excel as a mathematics educator. I aspire to secure a teaching position that fosters creativity and higher-order thinking through advanced teaching methods, enhancing student performance while promoting an environment of continuous learning, unlearning, and relearning.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section id="skills" class="section-card skills-section">
+            <h2 class="section-title">My Key Skills</h2>
+            <ul class="skills-grid">
+                <li class="skill-item">Mathematics Education</li>
+                <li class="skill-item">Curriculum Development (IGCSE, A Level, IB, 8.4.4)</li>
+                <li class="skill-item">Lesson Planning & Delivery</li>
+                <li class="skill-item">Student Mentorship</li>
+                <li class="skill-item">Technology Integration in Education</li>
+                <li class="skill-item">Leadership</li>
+                <li class="skill-item">Communication</li>
+                <li class="skill-item">Problem-Solving</li>
+                <li class="skill-item">Teamwork & Collaboration</li>
+                <li class="skill-item">Organizational Skills</li>
+                <li class="skill-item">Interpersonal Skills</li>
+                <li class="skill-item">Critical Thinking</li>
+                </ul>
+        </section>
+
+        ---
+
+        <section id="cta-resume" class="section-card cta-section">
+            <p>Ready to learn more about my professional journey and qualifications?</p>
+            <a href="/path/to/your/eliud_mautia_cv.pdf" download class="btn-primary">Download My Resume <i class="fas fa-download"></i></a>
+        </section>
+    </main>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliud Mautia - Educational Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="../src/style.css" rel="stylesheet">
+    <link href="../src/script.js" rel="script">
+    
+    <style>
+       
+        
+
+       
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
+            <!-- Desktop Nav Links -->
+            <div class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <!-- About Me and Professional Overview are now direct links -->
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
+                <a href="educational-background.html" class="nav-link">Educational Background</a>
+                <a href="references.html" class="nav-link">References</a>
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </div>
+            <!-- Mobile menu toggle button -->
+            <div class="mobile-menu-toggle-container">
+                <button id="mobile-menu-button" class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu (hidden by default, shown by JS) -->
+        <div id="mobile-menu" class="mobile-nav-menu">
+            <div class="nav-item-space">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="professional-overview.html">Professional Overview</a>
+                <a href="educational-background.html">Educational Background</a>
+                <a href="references.html">References</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dynamic Section Hero for Educational Background Page -->
+    <section id="dynamic-section-hero" class="section-hero container"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1546410531-bb448c52d478?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <h2>Educational Background</h2>
+    </section>
+
+    <main class="container">
+        <!-- Educational Background Section Content -->
+        <section id="educational-background" class="section-card">
+            <h2 class="section-title">Educational Background</h2>
+
+            <div class="educational-timeline">
+                <div class="educational-timeline-item">
+                    <h3>Master of Education (M.Ed.) in Educational Administration and Planning</h3>
+                    <p>University of Nairobi, Nairobi, Kenya</p>
+                    <span class="date">September 2018 - December 2020</span>
+                    <ul>
+                        <li>Specialized in educational leadership, curriculum development, and strategic planning.</li>
+                        <li>Conducted research on effective school management practices in diverse educational settings.</li>
+                    </ul>
+                </div>
+
+                <div class="educational-timeline-item">
+                    <h3>Bachelor of Education (B.Ed.) in Mathematics and Economics</h3>
+                    <p>Kenyatta University, Nairobi, Kenya</p>
+                    <span class="date">September 2009 - August 2012</span>
+                    <ul>
+                        <li>Graduated with First Class Honours.</li>
+                        <li>Focused on advanced mathematical concepts, economic theories, and pedagogical methods.</li>
+                        <li>Participated in student teaching internships, gaining practical classroom experience.</li>
+                    </ul>
+                </div>
+
+                <div class="educational-timeline-item">
+                    <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+                    <p>Kisii School, Kisii, Kenya</p>
+                    <span class="date">January 2005 - November 2008</span>
+                    <ul>
+                        <li>Achieved a mean grade of A (Plain).</li>
+                        <li>Excelled in Mathematics, Sciences, and Languages.</li>
+                    </ul>
+                </div>
+
+                <div class="educational-timeline-item">
+                    <h3>Professional Development & Certifications</h3>
+                    <p>Continuous learning is a cornerstone of my professional philosophy. Key certifications include:</p>
+                    <ul>
+                        <li>IB Diploma Programme (DP) Mathematics: Analysis and Approaches (AA) Workshop (Category 3)</li>
+                        <li>IB Diploma Programme (DP) Mathematics: Applications and Interpretation (AI) Workshop (Category 3)</li>
+                        <li>Cambridge IGCSE Mathematics (0580) Training</li>
+                        <li>Cambridge A-Level Mathematics (9709) Training</li>
+                        <li>Online Learning and Teaching Best Practices Certificate</li>
+                        <li>First Aid and CPR Certification</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
