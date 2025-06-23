@@ -43,39 +43,33 @@ ght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container navbar-content">
-            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
-            <!-- Desktop Nav Links -->
-            <div class="nav-links-desktop">
-                <a href="index.html" class="nav-link">Home</a>
-                <!-- About Me and Professional Overview are now direct links -->
-                <a href="about.html" class="nav-link">About Me</a>
-                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
-                <a href="educational-background.html" class="nav-link">Educational Background</a>
-                <a href="references.html" class="nav-link">References</a>
-                <a href="contact.html" class="nav-link">Contact Me</a>
-            </div>
-            <!-- Mobile menu toggle button -->
-            <div class="mobile-menu-toggle-container">
-                <button id="mobile-menu-button" class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Nav Menu (hidden by default, shown by JS) -->
-        <div id="mobile-menu" class="mobile-nav-menu">
-            <div class="nav-item-space">
+   <header class="header">
+        <nav class="navbar-container">
+            <a href="index.html" class="logo">Eliud Mautia</a>
+
+    <meta property="og:title" content="Kelvin Chwara Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <meta property="og:type" content="website" />
+             <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+    
+  </head>
+            <ul class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Me</a>
-                <a href="professional-overview.html">Professional Overview</a>
+                <a href="skills.html">Skills</a>
                 <a href="educational-background.html">Educational Background</a>
+                <a href="professional-overview.html">Professional Overview</a>
                 <a href="references.html">References</a>
-                <a href="contact.html">Contact Me</a>
-            </div>
-        </div>
-    </nav>
+                <a href="contact.html" class="active">Contact Me</a>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- Dynamic Section Hero for Contact Me Page -->
     <section id="dynamic-section-hero" class="section-hero container"
@@ -84,8 +78,7 @@ ght@400;600&display=swap" rel="stylesheet">
     </section>
 
     <main class="container">
-        <!-- Contact Me Section Content -->
-        <section id="contact" class="section-card">
+      
             <h2 class="section-title">Contact Me</h2>
 
             <div class="contact-info-grid">
@@ -107,23 +100,31 @@ ght@400;600&display=swap" rel="stylesheet">
                 </div>
             </div>
 
-            <p>Feel free to send me a direct message via WhatsApp:</p>
-            <form id="whatsappForm">
-                <div class="contact-form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
+            
+                    <div class="contact-form-container">
+                        
+                        <form class="contact-form" id="contactForm">
+                            <h4 style="text-align: center; color: darkblue">Fill in your details below</h4>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send via WhatsApp</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="contact-form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-buttons-container">
-                    <button type="submit" class="form-submit-button">
-                        <i class="fab fa-whatsapp"></i> Send WhatsApp Message
-                    </button>
-                    <span id="form-message" class="hidden"></span>
-                </div>
-            </form>
 
             <h3 class="subsection-title">Connect with me on Social Media</h3>
             <div class="social-media-buttons">

@@ -82,7 +82,8 @@
 
         .btn-primary {
             display: inline-block;
-            background-color: #007bff; /* Example primary color */
+            background-color: BROWN
+            ; /* Example primary color */
             color: white;
             padding: 0.8rem 2rem;
             border-radius: 5px;
@@ -112,34 +113,33 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container navbar-content">
-            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
-            <div class="nav-links-desktop">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About Me</a>
-                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
-                <a href="educational-background.html" class="nav-link">Educational Background</a>
-                <a href="references.html" class="nav-link">References</a>
-                <a href="contact.html" class="nav-link">Contact Me</a>
-            </div>
-            <div class="mobile-menu-toggle-container">
-                <button id="mobile-menu-button" class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="mobile-nav-menu">
-            <div class="nav-item-space">
+<header class="header">
+        <nav class="navbar-container">
+            <a href="index.html" class="logo">Eliud Mautia</a>
+
+    <meta property="og:title" content="Kelvin Chwara Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <meta property="og:type" content="website" />
+             <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+    
+  </head>
+            <ul class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
+                <a href="about.html" class="active">About Me</a>
+                <a href="skills.html">Skills</a>
+                <a href="educational-background.html">Educational Background</a>        
                 <a href="professional-overview.html">Professional Overview</a>
-                <a href="educational-background.html">Educational Background</a>
                 <a href="references.html">References</a>
                 <a href="contact.html">Contact Me</a>
-            </div>
-        </div>
-    </nav>
+            </ul>
+        </nav>
+    </header>
+
 
     <section id="dynamic-section-hero" class="section-hero container"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549923746-c50f80722e03?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
@@ -147,7 +147,7 @@
     </section>
 
     <main class="container">
-        ---
+        
         <section id="about" class="section-card">
             <h2 class="section-title">About Me</h2>
             <div class="about-content-wrapper">
@@ -183,7 +183,7 @@
                 </ul>
         </section>
 
-        ---
+        
 
         <section id="cta-resume" class="section-card cta-section">
             <p>Ready to learn more about my professional journey and qualifications?</p>

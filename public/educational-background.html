@@ -27,39 +27,33 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container navbar-content">
-            <a href="index.html" class="navbar-brand">Eliud Mautia</a>
-            <!-- Desktop Nav Links -->
-            <div class="nav-links-desktop">
-                <a href="index.html" class="nav-link">Home</a>
-                <!-- About Me and Professional Overview are now direct links -->
-                <a href="about.html" class="nav-link">About Me</a>
-                <a href="professional-overview.html" class="nav-link">Professional Overview</a>
-                <a href="educational-background.html" class="nav-link">Educational Background</a>
-                <a href="references.html" class="nav-link">References</a>
-                <a href="contact.html" class="nav-link">Contact Me</a>
-            </div>
-            <!-- Mobile menu toggle button -->
-            <div class="mobile-menu-toggle-container">
-                <button id="mobile-menu-button" class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Nav Menu (hidden by default, shown by JS) -->
-        <div id="mobile-menu" class="mobile-nav-menu">
-            <div class="nav-item-space">
+   <header class="header">
+        <nav class="navbar-container">
+            <a href="index.html" class="logo">Eliud Mautia</a>
+
+    <meta property="og:title" content="Kelvin Chwara Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <meta property="og:type" content="website" />
+             <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+    
+  </head>
+            <ul class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Me</a>
+                <a href="skills.html">Skills</a>
+                <a href="educational-background.html" class="active">Educational Background</a>
                 <a href="professional-overview.html">Professional Overview</a>
-                <a href="educational-background.html">Educational Background</a>
                 <a href="references.html">References</a>
                 <a href="contact.html">Contact Me</a>
-            </div>
-        </div>
-    </nav>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- Dynamic Section Hero for Educational Background Page -->
     <section id="dynamic-section-hero" class="section-hero container"
@@ -69,7 +63,7 @@
 
     <main class="container">
         <!-- Educational Background Section Content -->
-        <section id="educational-background" class="section-card">
+     
             <h2 class="section-title">Educational Background</h2>
 
             <div class="educational-timeline">
@@ -117,7 +111,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        
     </main>
 
    
