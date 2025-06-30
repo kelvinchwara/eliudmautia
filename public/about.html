@@ -28,11 +28,12 @@
 
         .about-image {
             flex-shrink: 0; /* Prevent image from shrinking */
-            max-width: 350px; /* Adjust size as needed */
+            max-width: 500px; /* Adjust size as needed */
             height: 230px; /* Maintain aspect ratio */
-            border-radius: 50%; /* Makes the image round */
+           
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-size: contain; /* or use 'cover' depending on your layout needs */
         }
 
         .about-text-content {
@@ -115,10 +116,13 @@
 
 <header class="header">
         <nav class="navbar-container">
-            <a href="index.html" class="logo">Eliud Mautia</a>
-
-    <meta property="og:title" content="Kelvin Chwara Portfolio" />
-    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <a href="index.html" class="logo">
+        <span class="letter">E</span><span class="letter">l</span><span class="letter">i</span><span class="letter">u</span><span class="letter">d</span>
+        <span class="letter"> </span>
+        <span class="letter">M</span><span class="letter">a</span><span class="letter">u</span><span class="letter">t</span><span class="letter">i</span><span class="letter">a</span>
+    </a>
+    <meta property="og:title" content="Eliud Mautia Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Eliud Mautia." />
     <meta property="og:type" content="website" />
              <button class="hamburger-menu" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
@@ -130,11 +134,11 @@
   </head>
             <ul class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Me</a>
+                <a href="about.html"class="active">About Me</a>
                 <a href="skills.html">Skills</a>
-                <a href="educational-background.html">Educational Background</a>        
+                <a href="educational-background.html">Educational Background</a>
                 <a href="professional-overview.html">Professional Overview</a>
-                <a href="references.html">References</a>
+                <a href="references.html" >References</a>
                 <a href="contact.html">Contact Me</a>
             </ul>
         </nav>
@@ -142,8 +146,8 @@
 
 
     <section id="dynamic-section-hero" class="section-hero container"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1549923746-c50f80722e03?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-        <h2>About Eliud Mautia</h2>
+        >
+        <h2 style=" font-size: 25px;">About Me</h2>
     </section>
 
     <main class="container">
@@ -163,33 +167,118 @@
             </div>
         </section>
 
-        ---
+       <!-- New Section: Founder of Elton Soma School -->
+    <section style="
+        padding: 4rem 1rem;
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 15px;
+        margin: 0.9rem auto;
+        max-width: 1200px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    ">
+        <div class="page-container">
+            <h2 style="
+                font-size: 1.5rem; /* text-4xl */
+                font-weight: 700; /* font-bold */
+                color: #2d3748;
+                margin-bottom: 1.1rem;
+            ">
+                Founder of <span style="color:rgb(143, 94, 55);">Elton Soma School</span>
+            </h2>
+            <p style="
+                font-size: 1.1rem; /* text-lg */
+                line-height: 1.5;
+                color:rgb(109, 88, 67);
+                margin-bottom: 1rem;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            ">
+                Am not only a dedicated Mathematics educator but also the visionary founder of Elton Soma School. Driven by a passion to provide accessible, high-quality education,  Soma school is here to nurture young minds and foster love for learning, especially in the crucial fields of STEM.
+                Elton Soma School stands as a testament to the belief in holistic education, combining rigorous academics with character development and practical skills.
+            </p>
+            <a href="#elton-soma-school" style="
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.75rem 1.75rem; /* px-7 py-3 */
+                background: linear-gradient(to right, #4E3F30,rgb(89, 76, 100)); /* from-indigo-500 to-purple-600 */
+                color: #ffffff;
+                font-weight: 600;
+                border-radius: 9999px; /* rounded-full */
+                text-decoration: none;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+                transition: all 0.3s ease;
+            ">
+                Read more 
+                <i class="fas fa-external-link-alt" style="margin-left: 0.5rem;"></i>
+            </a>
+        </div>
+    </section>
+    
 
-        <section id="skills" class="section-card skills-section">
-            <h2 class="section-title">My Key Skills</h2>
-            <ul class="skills-grid">
-                <li class="skill-item">Mathematics Education</li>
-                <li class="skill-item">Curriculum Development (IGCSE, A Level, IB, 8.4.4)</li>
-                <li class="skill-item">Lesson Planning & Delivery</li>
-                <li class="skill-item">Student Mentorship</li>
-                <li class="skill-item">Technology Integration in Education</li>
-                <li class="skill-item">Leadership</li>
-                <li class="skill-item">Communication</li>
-                <li class="skill-item">Problem-Solving</li>
-                <li class="skill-item">Teamwork & Collaboration</li>
-                <li class="skill-item">Organizational Skills</li>
-                <li class="skill-item">Interpersonal Skills</li>
-                <li class="skill-item">Critical Thinking</li>
-                </ul>
-        </section>
+       
 
         
 
         <section id="cta-resume" class="section-card cta-section">
             <p>Ready to learn more about my professional journey and qualifications?</p>
-            <a href="/path/to/your/eliud_mautia_cv.pdf" download class="btn-primary">Download My Resume <i class="fas fa-download"></i></a>
+            <a href="" style= "background-color:rgb(139, 95, 58); color: white; text-decoration: none; border-radius: 10px; padding: 10px;">Download My Resume <i class="fas fa-download"></i></a>
         </section>
     </main>
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+       <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Educational background</a></li>
+        <li><a href="contact.html">Professional Overview</a></li>
+        <li><a href="contact.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="" target="_blank"><i class="fab fa-pinterest"></i></a> 
+        
+        
+      </div>
+    </div>
+    <div class="footer-column">
+       <h4>Contact</h4>
+      <p>Email: mautiaeliud@gmail.com</p>
+      <p>Phone: +254 720 059 892 / +86 130 3830 3477</p>
+    </div>
+    <div class="footer-column">
+      <h4>FAQs</h4>
+      <ul>
+        <li><a href="#">What projects have you worked on?</a></li>
+        <li><a href="#">How can I hire you?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Eliud Mautia. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
 
     
 

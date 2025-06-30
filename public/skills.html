@@ -3,43 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliud Mautia - Professional Overview</title>
+    <title>Eliud Mautia - Skills</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <link href="src/style.css" rel="stylesheet">
-    <link href="src/script.js" rel="script">
-    <meta name="description" content="Professional overview of Eliud Mautia, a highly motivated and innovative Mathematics educator with experience across IGCSE, A Level, IB Diploma, and 8.4.4. systems.">
+   <link href="src/script.js" rel="script">
+    <meta name="description" content="Professional references for Eliud Mautia, a highly motivated and innovative Mathematics educator with experience across IGCSE, A Level, IB Diploma, and 8.4.4. systems.">
     <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="media/img/favicon.ico">
+    <link rel="apple-touch-icon" href="media/img/favicon.ico">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght   @400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400      ;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    
    
     <style>
-      
+       .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 1.5rem; /* gap-6 */
+        }
 
-        
+        .skill-item {
+            background-color: #ffffff;
+            padding: 1.5rem; /* p-6 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: all 300ms ease-in-out; /* transition-all duration-300 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skill-item:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+            transform: scale(1.05); /* transform hover:scale-105 */
+        }
+
+        .skill-item i {
+            color:rgb(174, 226, 106); /* text-blue-500 */
+            font-size: 2.5rem; /* text-4xl */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+
+        .skill-item p {
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 600; /* font-semibold */
+            color: #4b5563; /* text-gray-700 */
+        }
+
+        /* Skills Cards Section */
+        .skills-cards-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+            gap: 1.5rem; /* gap-6 */
+        }
+
+        .skills-card {
+            background-color:rgb(243, 245, 236);
+            padding: 1.5rem; /* p-6 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            border: 1px solid #e5e7eb; /* border border-gray-200 */
+        }
+
+        .skills-card h3 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            margin-bottom: 1rem; /* mb-4 */
+            color: #374151; /* text-gray-800 */
+        }
+
+        .skills-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem; /* space-y-2 */
+        }
+
+        .skills-card li {
+            color: #4b5563; /* text-gray-600 */
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-card li i {
+            margin-right: 0.5rem; /* mr-2 */
+        }
+
+        /* Specific icon colors */
+        .skills-card li .fa-check-circle { color:rgb(156, 197, 142); /* text-green-500 */ }
+        .skills-card li .fa-laptop-code, .fa-cloud, .fa-chalkboard, .fa-calculator, .fa-database { color:rgb(136, 230, 108); /* text-blue-500 */ }
+        .skills-card li .fa-award { color:rgb(179, 153, 76); /* text-yellow-500 */ }
+        .skills-card li .fa-graduation-cap { color: rgb(117, 91, 64); /* text-purple-500 */ }
+
+        /* Call to Action Section */
+        .cta-resume {
+            text-align: center;
+            background-color: #eff6ff; /* bg-blue-50 */
+            padding: 2rem; /* p-8 */
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* shadow-inner */
+            margin-bottom: 3rem; /* mb-12 */
+        }
+
+        .cta-resume p {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600; /* font-semibold */
+            margin-bottom: 1.5rem; /* mb-6 */
+            color: #4b5563; /* text-gray-700 */
+        }
+
+        @media (min-width: 768px) {
+            .cta-resume p {
+                font-size: 1.5rem; /* md:text-2xl */
+            }
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2.5rem; /* px-10 py-4 */
+            background-color:rgb(117, 91, 64); /* bg-blue-600 */
+            color: #ffffff;
+            font-weight: 700; /* font-bold */
+            border-radius: 9999px; /* rounded-full */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+            outline: none; /* focus:outline-none */
+        }
+
+        .btn-primary:hover {
+            background-color:rgb(80, 218, 61); /* hover:bg-blue-700 */
+            transform: scale(1.05); /* transform hover:scale-105 */
+        }
+
+        .btn-primary:focus {
+            box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.5); /* focus:ring-4 focus:ring-blue-300 */
+        }
+
+        .btn-primary i {
+            margin-left: 0.75rem; /* ml-3 */
+        }
+
+ 
+
     </style>
 </head>
 <body>
     
 <header class="header">
         <nav class="navbar-container">
-            <a href="index.html" class="logo">Eliud Mautia</a>
-
-    <meta property="og:title" content="Kelvin Chwara Portfolio" />
-    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <a href="index.html" class="logo">
+        <span class="letter">E</span><span class="letter">l</span><span class="letter">i</span><span class="letter">u</span><span class="letter">d</span>
+        <span class="letter"> </span>
+        <span class="letter">M</span><span class="letter">a</span><span class="letter">u</span><span class="letter">t</span><span class="letter">i</span><span class="letter">a</span>
+    </a>
+    <meta property="og:title" content="Eliud Mautia Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Eliud Mautia." />
     <meta property="og:type" content="website" />
              <button class="hamburger-menu" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
@@ -52,132 +173,199 @@
             <ul class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Me</a>
-                <a href="skills.html" class="active">Skills</a>
+                <a href="skills.html"class="active">Skills</a>
                 <a href="educational-background.html">Educational Background</a>
-                <a href="professional-overview.html" >Professional Overview</a>
-                <a href="references.html">References</a>
+                <a href="professional-overview.html">Professional Overview</a>
+                <a href="references.html" >References</a>
                 <a href="contact.html">Contact Me</a>
             </ul>
         </nav>
     </header>
 
+
    
 
 
 
-    <!-- Dynamic Section Hero for Professional Overview Page -->
-    <section id="dynamic-section-hero" class="section-hero container"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1505373877845-8c2a7b44fa38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-        <h2>Professional Overview</h2>
+   <!-- Dynamic Section Hero for Professional Overview Page -->
+     <section id="dynamic-section-hero" class="section-hero container">
+        <h2 style="font-size: 25px;">My Skills</h2>
     </section>
 
     <main class="container">
-       
-            <h2 class="section-title">Professional Overview</h2>
-
-            <h3 class="subsection-title">My Skills</h3>
+        <!-- Key Competencies Section -->
+        <section class="mb-16">
+            <h2 class="section-title">Key Competencies</h2>
             <div class="skills-grid">
+                <!-- Skill Item 1 -->
                 <div class="skill-item">
                     <i class="fas fa-comments"></i>
-                    <p>Efficient and Effective Verbal & Written Communication Skills</p>
+                    <p>Communication (Verbal & Written)</p>
                 </div>
+                <!-- Skill Item 2 -->
                 <div class="skill-item">
                     <i class="fas fa-chart-line"></i>
-                    <p>Analytical and Data Mining Skills</p>
+                    <p>Analytical Thinking & Data Mining</p>
                 </div>
+                <!-- Skill Item 3 -->
                 <div class="skill-item">
                     <i class="fas fa-lightbulb"></i>
-                    <p>Passionate, Innovative & Conflict Resolution Skills</p>
+                    <p>Innovation & Conflict Resolution</p>
                 </div>
+                <!-- Skill Item 4 -->
                 <div class="skill-item">
                     <i class="fas fa-users"></i>
-                    <p>Leadership & Coaching Skills</p>
+                    <p>Leadership & Coaching</p>
                 </div>
+                <!-- Skill Item 5 -->
                 <div class="skill-item">
                     <i class="fas fa-brain"></i>
-                    <p>Problem Solving and Decision Solving Skills</p>
+                    <p>Problem Solving & Decision Making</p>
                 </div>
+                <!-- Skill Item 6 -->
                 <div class="skill-item">
                     <i class="fas fa-globe"></i>
-                    <p>Culturally Aware, Inclusive & Result Driven Skills</p>
+                    <p>Cultural Awareness & Inclusivity</p>
                 </div>
+                <!-- Skill Item 7 -->
                 <div class="skill-item">
                     <i class="fas fa-rocket"></i>
-                    <p>Curious, Growth Oriented & Technology Integration Skills</p>
+                    <p>Tech Integration & Growth Mindset</p>
                 </div>
+                <!-- Skill Item 8 -->
                 <div class="skill-item">
                     <i class="fas fa-handshake"></i>
-                    <p>Life Long Learning, Skill Connectors & Interpersonal Relations Skills</p>
+                    <p>Lifelong Learning & Interpersonal Skills</p>
                 </div>
+                <!-- Skill Item 9 -->
                 <div class="skill-item">
                     <i class="fas fa-comments"></i>
-                    <p>Collaborative, Global Minded & Emotional Intelligence Skills</p>
+                    <p>Collaboration & Emotional Intelligence</p>
                 </div>
+                <!-- Skill Item 10 -->
                 <div class="skill-item">
                     <i class="fas fa-calendar-alt"></i>
-                    <p>Open Minded, Reflective, Planning and Organisational Skills</p>
+                    <p>Planning, Reflection & Organization</p>
                 </div>
+                <!-- Skill Item 11 -->
                 <div class="skill-item">
                     <i class="fas fa-chalkboard-teacher"></i>
-                    <p>Inquiry & Project Based Learning Skills</p>
+                    <p>Inquiry-Based & Project Learning</p>
                 </div>
+                <!-- Skill Item 12 -->
                 <div class="skill-item">
                     <i class="fas fa-book-open"></i>
-                    <p>Lesson Development, Curriculum Design & Planning Skills</p>
+                    <p>Curriculum Design & Lesson Planning</p>
                 </div>
             </div>
-
-            <div class="skills-languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>English (Fluent)</li>
-                    <li>Swahili (Fluent)</li>
-                    <li>Mandarin (Fluent)</li>
-                </ul>
-            </div>
-
-            <div class="skills-technology">
-                <h3>Technology Skills</h3>
-                <ul>
-                    <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
-                    <li>Google Workspace (Docs, Sheets, Slides)</li>
-                    <li>Learning Management Systems (Moodle, Google Classroom)</li>
-                    <li>Mathematical Software (GeoGebra, Desmos)</li>
-                    <li>Data Analysis Tools (Excel, SPSS)</li>
-                </ul>
-        
-            </div>
-            <div class="skills-certifications">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>IB Diploma Programme (DP) Mathematics: Analysis and Approaches (AA) Workshop (Category 3)</li>
-                    <li>IB Diploma Programme (DP) Mathematics: Applications and Interpretation (AI) Workshop (Category 3)</li>
-                    <li>Cambridge IGCSE Mathematics (0580) Training</li>
-                    <li>Cambridge A-Level Mathematics (9709) Training</li>
-                    <li>Online Learning and Teaching Best Practices Certificate</li>
-                    <li>First Aid and CPR Certification</li>
-                </ul>
-
-            </div>
-            <div class="skills-education">
-                <h3>Education</h3>
-                <ul>
-                    <li>Master of Education (M.Ed.) in Educational Administration and Planning, University of Nairobi, Kenya</li>
-                    <li>Bachelor of Education (B.Ed.) in Mathematics and Economics, Kenyatta University, Kenya</li>
-                    <li>Kenya Certificate of Secondary Education (KCSE), Kisii School, Kenya</li>
-                </ul>   
-            </div>
-        <section id="cta-resume" class="section-card cta-section">
-            <p>Ready to learn more about my professional journey and qualifications?</p>    
-            <a href="/path/to/your/eliud_mautia_cv.pdf" download class="btn-primary">Download My Resume <i class="fas fa-download"></i></a>
         </section>
 
+        <!-- Skills Cards Section -->
+        <section class="mb-16">
+            <div class="skills-cards-wrapper">
+                <!-- Languages Card -->
+                <div class="skills-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i>English (Fluent)</li>
+                        <li><i class="fas fa-check-circle"></i>Swahili (Fluent)</li>
+                        <li><i class="fas fa-check-circle"></i>Mandarin (Fluent)</li>
+                    </ul>
+                </div>
+                <!-- Technology Skills Card -->
+                <div class="skills-card">
+                    <h3>Technology Skills</h3>
+                    <ul>
+                        <li><i class="fas fa-laptop-code"></i>Microsoft Office Suite</li>
+                        <li><i class="fas fa-cloud"></i>Google Workspace</li>
+                        <li><i class="fas fa-chalkboard"></i>Moodle & Google Classroom</li>
+                        <li><i class="fas fa-calculator"></i>GeoGebra & Desmos</li>
+                        <li><i class="fas fa-database"></i>Excel & SPSS</li>
+                    </ul>
+                </div>
+                <!-- Certifications Card -->
+                <div class="skills-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><i class="fas fa-award"></i>IB DP AA & AI Workshops</li>
+                        <li><i class="fas fa-award"></i>Cambridge IGCSE & A-Level Training</li>
+                        <li><i class="fas fa-award"></i>Online Teaching Practices Certificate</li>
+                        <li><i class="fas fa-award"></i>First Aid & CPR</li>
+                    </ul>
+                </div>
+                <!-- Education Card -->
+                <div class="skills-card">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i>M.Ed., University of  Liverpool John Moores </li>
+                        <li><i class="fas fa-graduation-cap"></i>B.Ed., Nairobi </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <!-- Call to Action: Download Resume -->
+        <section class="cta-resume">
+            <p>Ready to explore my full professional profile?</p>
+            <a href="" download class="btn-primary">
+                Download My Resume <i class="fas fa-download"></i>
+            </a>
+        </section>
     </main>
 
-    
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+       <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Educational background</a></li>
+        <li><a href="contact.html">Professional Overview</a></li>
+        <li><a href="contact.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 
-    <script src="src/script.js"></script>
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="" target="_blank"><i class="fab fa-pinterest"></i></a> 
+        
+        
+      </div>
+    </div>
+    <div class="footer-column">
+       <h4>Contact</h4>
+      <p>Email: mautiaeliud@gmail.com</p>
+      <p>Phone: +254 720 059 892 / +86 130 3830 3477</p>
+    </div>
+    <div class="footer-column">
+      <h4>FAQs</h4>
+      <ul>
+        <li><a href="#">What projects have you worked on?</a></li>
+        <li><a href="#">How can I hire you?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Eliud Mautia. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+ <script src="src/script.js"></script>
     
 </body>
 </html>

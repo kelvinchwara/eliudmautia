@@ -33,9 +33,82 @@ ght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">                 
     
     <style>
-        
+         .site-footer {
+        margin-top: -6rem;
+  background-color: #4b2d15;
+  color: #eee;
+  padding:  20px;
+  font-size: 14px;
+}
 
-       
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #28ad28; /* Twitter Blue or change per platform */
+}
+
+.footer-bottom {
+  text-align: center;
+  
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #aaa;
+}
+
+       .contact-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link:hover {
+  color: rgb(140, 212, 73);
+}
+
 
        
             
@@ -45,10 +118,13 @@ ght@400;600&display=swap" rel="stylesheet">
 
    <header class="header">
         <nav class="navbar-container">
-            <a href="index.html" class="logo">Eliud Mautia</a>
-
-    <meta property="og:title" content="Kelvin Chwara Portfolio" />
-    <meta property="og:description" content="A professional portfolio for Kelvin Chwara." />
+    <a href="index.html" class="logo">
+        <span class="letter">E</span><span class="letter">l</span><span class="letter">i</span><span class="letter">u</span><span class="letter">d</span>
+        <span class="letter"> </span>
+        <span class="letter">M</span><span class="letter">a</span><span class="letter">u</span><span class="letter">t</span><span class="letter">i</span><span class="letter">a</span>
+    </a>
+    <meta property="og:title" content="Eliud Mautia Portfolio" />
+    <meta property="og:description" content="A professional portfolio for Eliud Mautia." />
     <meta property="og:type" content="website" />
              <button class="hamburger-menu" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
@@ -64,47 +140,51 @@ ght@400;600&display=swap" rel="stylesheet">
                 <a href="skills.html">Skills</a>
                 <a href="educational-background.html">Educational Background</a>
                 <a href="professional-overview.html">Professional Overview</a>
-                <a href="references.html">References</a>
-                <a href="contact.html" class="active">Contact Me</a>
+                <a href="references.html" >References</a>
+                <a href="contact.html"class="active">Contact Me</a>
             </ul>
         </nav>
     </header>
 
-
     <!-- Dynamic Section Hero for Contact Me Page -->
-    <section id="dynamic-section-hero" class="section-hero container"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
-        <h2>Contact Eliud</h2>
+    <section id="dynamic-section-hero" class="section-hero container">
+        <h2 style=" font-size: 25px;">Contact Me</h2>
     </section>
 
     <main class="container">
       
             <h2 class="section-title">Contact Me</h2>
 
-            <div class="contact-info-grid">
-                <div class="contact-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>mautiaeliud@email.com</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>+254 720 059 892 / +86 130 3830 3477</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>401122, Chongqing China</span>
-                </div>
-                <div class="contact-info-item">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>+254 720 059 892</span>
-                </div>
-            </div>
+           <div class="contact-info-grid">
+  <div class="contact-info-item">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:mautiaeliud@email.com" class="contact-link">mautiaeliud@email.com</a>
+  </div>
 
+  <div class="contact-info-item">
+    <i class="fas fa-phone-alt"></i>
+    <a href="tel:+254720059892" class="contact-link">+254 720 059 892</a> /
+    <a href="tel:+8613038303477" class="contact-link">+86 130 3830 3477</a>
+  </div>
+
+  <div class="contact-info-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span>401122, Chongqing China</span>
+  </div>
+
+  <div class="contact-info-item">
+    <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/254720059892" target="_blank" class="contact-link">+254 720 059 892</a>
+  </div>
+</div>
+
+            <h3 class="subsection-title">Get in Touch</h3>
+            <p>     
             
                     <div class="contact-form-container">
                         
                         <form class="contact-form" id="contactForm">
-                            <h4 style="text-align: center; color: darkblue">Fill in your details below</h4>
+                            <h4 style="text-align: center; color: rgb(140, 212, 73)">Fill in your details below</h4>
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -126,23 +206,63 @@ ght@400;600&display=swap" rel="stylesheet">
                     </div>
                 </div>
 
-            <h3 class="subsection-title">Connect with me on Social Media</h3>
-            <div class="social-media-buttons">
-                <a href="https://www.linkedin.com/in/eliud-mautia-5245274b?lipi=urn%3Ali" target="_blank" class="social-button linkedin">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="" target="_blank" class="social-button twitter">
-                    <i class="fab fa-twitter"></i> Twitter
-                </a>
-                <a href="" target="_blank" class="social-button facebook">
-                    <i class="fab fa-facebook"></i> Facebook
-                </a>
-                <a href="" target="_blank" class="social-button instagram">
-                    <i class="fab fa-instagram"></i> Instagram
-                </a>
-            </div>
+           
         </section>
     </main>
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+       <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Educational background</a></li>
+        <li><a href="contact.html">Professional Overview</a></li>
+        <li><a href="contact.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Me</h4>
+      <div class="social-icons">
+        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="" target="_blank"><i class="fab fa-pinterest"></i></a> 
+        
+        
+      </div>
+    </div>
+    <div class="footer-column">
+       <h4>Contact</h4>
+      <p>Email: mautiaeliud@gmail.com</p>
+      <p>Phone: +254 720 059 892 / +86 130 3830 3477</p>
+    </div>
+    <div class="footer-column">
+      <h4>FAQs</h4>
+      <ul>
+        <li><a href="#">What projects have you worked on?</a></li>
+        <li><a href="#">How can I hire you?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Eliud Mautia. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
     
 
    
