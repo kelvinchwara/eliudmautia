@@ -130,8 +130,8 @@ if (contactForm) {
             return;
         }
 
-        const whatsappMessage = `Hello, my name is ${name}.%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
-        const phone = '25491639902'; // Kenya code, no '+' needed in WhatsApp link
+        const whatsappMessage = `Hello Mr. Eliud Mautia , my name is ${name}.%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+        const phone = '254720059892'; // Kenya code, no '+' needed in WhatsApp link
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
 
         window.open(url, '_blank');
