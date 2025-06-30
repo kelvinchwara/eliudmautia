@@ -983,9 +983,9 @@
 .footer-bottom {
   text-align: center;
   
-  border-top: 1px solid #333;
+  border-top: 1px solid #ffffff;
   padding-top: 10px;
-  color: #aaa;
+  color: #ffffff;
 }
 .cta-button {
   display: inline-block;
